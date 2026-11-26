@@ -1,0 +1,13 @@
+# ComfyUI Python dependencies for the bundled KandinskyLab wheel.
+# Install CUDA-enabled PyTorch separately in the existing ComfyUI runtime.
+accelerate>=0.31.0
+click>=8.1
+diffusers>=0.41.0
+huggingface-hub<2,>=1.32
+loguru>=0.7
+numpy>=1.26
+omegaconf>=2.3
+pillow>=10.0
+pydantic>=2.0
+safetensors>=0.8
+transformers<6,>=5.20

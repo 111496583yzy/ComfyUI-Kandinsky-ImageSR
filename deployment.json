@@ -1,0 +1,14 @@
+{
+  "upscale_factors": [
+    2,
+    4
+  ],
+  "default_creativity": 4,
+  "max_creativity": 8,
+  "model_directory": "kandinsky_image_sr/Kandinsky-ImageSR-2.0",
+  "model_revision": "7d5b5ed7def0b45b98f398c0b295a6b1658863db",
+  "upstream_code_revision": "6c2405796cf7576b0cffff27acd103d667b91ca8",
+  "seconds_per_image": 900,
+  "default_overlap": 0.25,
+  "default_tile_batch_size": 1
+}

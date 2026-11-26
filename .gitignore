@@ -1,0 +1,11 @@
+# Local Python and model artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.cache/
+*.safetensors
+*.ckpt
+*.pth
+*.pt

@@ -1,0 +1,60 @@
+{
+  "repo": "kandinskylab/Kandinsky-ImageSR-2.0",
+  "revision": "7d5b5ed7def0b45b98f398c0b295a6b1658863db",
+  "files": [
+    {
+      "name": "SOURCE.json",
+      "size": 362,
+      "algo": "sha1",
+      "hash": "3880f0a23a93bd0d4b31999d9edd1715db5cb2f1"
+    },
+    {
+      "name": "model_index.json",
+      "size": 455,
+      "algo": "sha1",
+      "hash": "246c240df138d131bd8eb95246034b6e1eb7770e"
+    },
+    {
+      "name": "transformer/config.json",
+      "size": 628,
+      "algo": "sha1",
+      "hash": "9514d5e5edf318680f5522d27512bc5e7eef4945"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "size": 4988839016,
+      "algo": "sha256",
+      "hash": "999909010bf61b311b7b1d1f71a1a5e4dd39fe1e5ae8f51bb7164d24a61e383f"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "size": 4993423840,
+      "algo": "sha256",
+      "hash": "3976b0d0879011bb6a79940aaf00c9172ee8dae18f4ee24ed7a132e6b1cca6a6"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "size": 268045424,
+      "algo": "sha256",
+      "hash": "4b0772dc003f0dd4b5ada3bd0f830cf33cdead44bc2e806096064262bb651e12"
+    },
+    {
+      "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "size": 90362,
+      "algo": "sha1",
+      "hash": "34e816f7a7f89b471fcd8c0db05919cf9e392e27"
+    },
+    {
+      "name": "vae/config.json",
+      "size": 824,
+      "algo": "sha1",
+      "hash": "3666d1d35f884cdcea30f125f4963a030793ec25"
+    },
+    {
+      "name": "vae/diffusion_pytorch_model.safetensors",
+      "size": 167666902,
+      "algo": "sha256",
+      "hash": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3"
+    }
+  ]
+}

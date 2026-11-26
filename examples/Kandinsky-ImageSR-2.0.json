@@ -1,0 +1,169 @@
+{
+  "last_node_id": 4,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "title": "① 上传你自己的原图",
+      "pos": [
+        42,
+        182
+      ],
+      "size": [
+        302,
+        340
+      ],
+      "mode": 0,
+      "order": 0,
+      "flags": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "KandinskyImageSR2",
+      "title": "② 选择放大倍率",
+      "pos": [
+        418,
+        182
+      ],
+      "size": [
+        330,
+        208
+      ],
+      "mode": 0,
+      "order": 1,
+      "flags": {},
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "upscaled_image",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KandinskyImageSR2"
+      },
+      "widgets_values": [
+        "2x",
+        4,
+        0.25,
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "type": "SaveImage",
+      "title": "③ 保存高清图",
+      "pos": [
+        824,
+        182
+      ],
+      "size": [
+        360,
+        390
+      ],
+      "mode": 0,
+      "order": 2,
+      "flags": {},
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "Kandinsky_ImageSR/Kandinsky"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "MarkdownNote",
+      "title": "Kandinsky ImageSR 2.0 · 图片超分",
+      "pos": [
+        42,
+        34
+      ],
+      "size": [
+        710,
+        120
+      ],
+      "mode": 0,
+      "order": 3,
+      "flags": {},
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "MarkdownNote"
+      },
+      "widgets_values": [
+        "上传原图 → 选择放大倍率 → 运行。无需提示词。先用默认的 creativity，想更贴近原图时再调低。 分块设置默认重叠 25%、每批 1 块。"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.89,
+      "offset": [
+        16,
+        12
+      ]
+    }
+  },
+  "version": 0.4
+}
